@@ -20,25 +20,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory;
+package com.iluwatar.abstractfactory.domain;
 
 /**
  * 
- * ElfKingdomFactory concrete factory.
- * 
+ * Army interface
+ *
  */
-public class ElfKingdomFactory implements KingdomFactory {
+public interface Army {
 
-  public Castle createCastle() {
-    return new ElfCastle();
-  }
-
-  public King createKing() {
-    return new ElfKing();
-  }
-
-  public Army createArmy() {
-    return new ElfArmy();
-  }
-
+  String getDescription();
 }

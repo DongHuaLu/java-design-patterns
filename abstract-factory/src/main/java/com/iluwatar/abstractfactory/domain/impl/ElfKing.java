@@ -20,14 +20,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory;
+package com.iluwatar.abstractfactory.domain.impl;
+
+import com.iluwatar.abstractfactory.domain.King;
 
 /**
  * 
- * Army interface
+ * ElfKing
  *
  */
-public interface Army {
+public class ElfKing implements King {
 
-  String getDescription();
+  public static final String DESCRIPTION = "This is the Elven king!";
+
+  @Override
+  public String getDescription() {
+    return DESCRIPTION;
+  }
 }

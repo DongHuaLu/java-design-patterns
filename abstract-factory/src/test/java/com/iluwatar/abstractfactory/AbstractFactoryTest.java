@@ -28,6 +28,19 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.iluwatar.abstractfactory.domain.Army;
+import com.iluwatar.abstractfactory.domain.Castle;
+import com.iluwatar.abstractfactory.domain.King;
+import com.iluwatar.abstractfactory.domain.impl.ElfArmy;
+import com.iluwatar.abstractfactory.domain.impl.ElfCastle;
+import com.iluwatar.abstractfactory.domain.impl.ElfKing;
+import com.iluwatar.abstractfactory.domain.impl.OrcArmy;
+import com.iluwatar.abstractfactory.domain.impl.OrcCastle;
+import com.iluwatar.abstractfactory.domain.impl.OrcKing;
+import com.iluwatar.abstractfactory.factory.KingdomFactory;
+import com.iluwatar.abstractfactory.factory.impl.ElfKingdomFactory;
+import com.iluwatar.abstractfactory.factory.impl.OrcKingdomFactory;
+
 public class AbstractFactoryTest {
 
   private App app = new App();

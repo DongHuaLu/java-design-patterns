@@ -20,19 +20,23 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.iluwatar.abstractfactory;
+package com.iluwatar.abstractfactory.factory;
+
+import com.iluwatar.abstractfactory.domain.Army;
+import com.iluwatar.abstractfactory.domain.Castle;
+import com.iluwatar.abstractfactory.domain.King;
 
 /**
  * 
- * OrcKing
- *
+ * KingdomFactory factory interface.
+ * 
  */
-public class OrcKing implements King {
+public interface KingdomFactory {
 
-  static final String DESCRIPTION = "This is the Orc king!";
+  Castle createCastle();
 
-  @Override
-  public String getDescription() {
-    return DESCRIPTION;
-  }
+  King createKing();
+
+  Army createArmy();
+
 }

@@ -22,6 +22,13 @@
  */
 package com.iluwatar.abstractfactory;
 
+import com.iluwatar.abstractfactory.domain.Army;
+import com.iluwatar.abstractfactory.domain.Castle;
+import com.iluwatar.abstractfactory.domain.King;
+import com.iluwatar.abstractfactory.factory.KingdomFactory;
+import com.iluwatar.abstractfactory.factory.impl.ElfKingdomFactory;
+import com.iluwatar.abstractfactory.factory.impl.OrcKingdomFactory;
+
 /**
  * 
  * The Abstract Factory pattern provides a way to encapsulate a group of individual factories that have a common theme
